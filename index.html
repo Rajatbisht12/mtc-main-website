@@ -56,7 +56,7 @@
   }
 
   div div p:nth-child(1){
-    color: blue;
+    color: rgb(0, 0, 0);
   }
 
  
@@ -431,6 +431,16 @@ margin-bottom: 1000px;
   margin-top: 100px;
   text-align: center;
   text-decoration: wavy;
+}
+
+@media (max-width:800px) {
+  .livecontainer{
+    width: 400px;
+  }
+  
+  .banner-image {
+    width: 300px;
+  }
 }
    </style>
 
@@ -834,7 +844,196 @@ margin-bottom: 1000px;
               <img src="assets/img/Sponsors/6.jpg" class="icon-img" alt="" />
             </div>
           </div>-->
+          <style>
+            .popup{
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              display: none;
+            }
+
+            .contentbox{
+              position:relative;
+              width: 800px;
+              height: 600px;
+              background: #fff;
+              border-radius: 20px;
+              display: flex;
+                       
+            
+            }
+
+            .contentbox .imgbx{
+              position: relative;
+              width: 200px;
+              height: 600px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-left: 220px;
+            }
+
+            .contentbox .imgbx::before{
+              content: '';
+              position: absolute;
+              width: 250px;
+              height: 250px;
+
+            }
+            .contentbox .imgbx img{
+              position: relative;
+              max-width: 400px;
+              border-radius: 12px;
+              z-index: 1; 
+            }
+
+            .contentbox .popcontent{
+              position: relative;
+              width: 300px;
+              height: 400px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+           
+            }
+
+
+            .contentbox .popcontent p {
+           font-size: 18px;
+           margin-left: 300px;
+            }
+
+            .contentbox .popcontent .pophead h1{
+              margin-top: 130px;
+              margin-left: 180px;
+              display: inline-flexbox;
+           font-size: 30px;
+           margin-left: 300px;
+           color: black;
+         
+            }
+            .conttxt{
+              margin-top: 20px;
+              margin-left: 200px;
+              color: black;
+            }
+            .poplink{
+              margin-left: 550px;
+              margin-top: 20px;
+              position: fixed;
+            }
+
+            .pophead{
+              margin-left: 180px;
+              width: 600px;
+            }
+
+            .contentbox .popcontent a{
+              display: inline-block;
+              padding: 10px 20px;
+              background: #ff4d54;
+              color: #fff;
+              margin-top: 15px;
+              text-decoration: none;
+              border-radius: 10px;
+            }
+
+            .close{
+              position: absolute;
+              top: 20px;
+              right: 20px;
+              width: 40px;
+              height: 40px;
+              background: #f3f3f3;
+              background-repeat: no-repeat;
+              background-size: 10px;
+              background-position: center;
+              cursor: pointer;
+              border-radius: 50%;
+              z-index: 10;
+            }
+@media (max-width : 800px){
+
+  .contentbox{
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+  }
+
+  .contentbox .imgbx{
+    height: 100px;
+    width: 10px;
+    margin-left: -70px;
+    margin-top: 180px;
+    transform: translateY(-50px);
+  }
+
+  .contentbox .imgbx img{
+              position: absolute;
+              height: 200px;
+              width: 250px;
+              border-radius: 12px;
+              z-index: 1; 
+            }
+
+  .contentbox .popcontent{
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 20px;
+    margin-left: -240px;
+    margin-top: -90px;
+    font-size: 10px;
+  }
+
+  .contentbox .popcontent .poptxt p{
+    font-size: 10px;
+  }
+
+
+  .close{
+    margin-left: -70px;
+    margin-top: -10px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+  }
+
+  .poplink{
+    margin-top: -40px;
+    margin-left: 600px;
+  }
+}
+          </style>
  
+<div class="popup">
+  <div class="contentbox">
+    <div class="close">
+      <img src="assets/img/cross.png" width="50px">
+    </div>
+    <div class="imgbx">
+      <img src="assets/img/registeration.jpeg " width="500px">
+    </div>
+    <div class="popcontent">
+      <div>
+        <div class="pophead">
+      <h1><b>Registrations Open</b></h1>
+      </div>
+      <div class="conttxt">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vel architecto repudiandae unde assumenda ipsam error praesentium minus sapiente temporibus? Sequi, tempore ex! Maxime fuga libero repellendus, quam quaerat nulla deleniti, ut, aperiam eius ullam mollitia labore. Laudantium aut adipisci optio fugiat laborum sint numquam consequatur dolor itaque, reiciendis repellat?</p>
+        </div>
+      <div class="poplink">
+      <a href="#"> Join Us !!! </a>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
     </section>
 
     <footer id="footer">
@@ -936,6 +1135,20 @@ margin-bottom: 1000px;
         );
         /*swal();*/
       }
+
+
+const popup = document.querySelector('.popup')
+const close = document.querySelector('.close')
+
+      window.onload = function(){
+        setTimeout(function(){
+          popup.style.display = "block";
+        }, 2000)
+      }
+
+      close.addEventListener('click', () => {
+        popup.style.display = "none";
+      })
     </script>
   </body>
 </html>
