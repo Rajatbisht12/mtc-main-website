@@ -9,16 +9,16 @@
 .landing {
   /* padding-top: 200px; */
   display: flex;
-
   align-items: center;
   justify-content: center;
-
+  object-fit: cover;
   width: 100%;
   height: 100vh;
   background-color: rgba(35, 44, 128, 0.774);
   background-image: url("./assets/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
 }
 
