@@ -66,8 +66,8 @@
 
 .carousel-perks .perk-card {
   scroll-snap-align: start;
-  /* height: 450px; */
-  height: auto;
+  height: 418px;
+  /* height: auto; */
   width: 400px;
   list-style: none;
   background: rgb(255, 255, 255);
@@ -85,7 +85,7 @@
 
 .perk-card .img img {
   width: 350px;
-  height: 200px;
+  height: 358px;
   object-fit: cover;
   border-radius: 10px;
 }
