@@ -139,6 +139,9 @@ background: green;
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.mtclogo{
+    margin-left: -200px;
+}
 
 #header {
     height: 90px;
@@ -158,7 +161,7 @@ background: green;
 }
 
 #header #logo h1 {
-    font-size: 36px;
+    font-size: 50px;
     margin: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -543,8 +546,7 @@ background: green;
 
     font-family: "Product Sans", sans-serif;
     font-size: 56px;
-    font
-    -weight: 600;
+    font-weight: 600;
 
   /*  background: linear-gradient(to right, red, green, blue, yellow);
     -webkit-text-fill-color: transparent;
