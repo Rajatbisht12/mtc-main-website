@@ -4,9 +4,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   /* font-family: opesans; */
+  /* overflow-x: hidden; */
+}
+body{
   overflow-x: hidden;
 }
-
 .landing {
   /* padding-top: 200px; */
   display: flex;
@@ -65,13 +67,7 @@
   justify-content: center;
   align-items: center;
 }
-#footer{
-  background: #2BAE66FF;
-    padding: 0 0 25px 0;
-    color: black;
-    font-size: 20px;
-    margin-top: 15px;
-}
+
 .landing button {
   overflow: hidden;
   position: relative;
@@ -177,6 +173,9 @@
 .sponsors .holders img {
   width: 300px;
   object-fit: cover;
+}
+#footer{
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
