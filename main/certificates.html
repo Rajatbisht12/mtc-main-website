@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+
+    <title>Microsoft Technical Community</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/image1.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: TheEvent - v4.1.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    height: 1000px;
+}
+
+.livecontainer {
+  margin-top: 100px;
+  margin-left: 100px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);  
+  padding: 38px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  width: 500px;
+  justify-content:center;
+  text-align: center;
+  
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.banner-image {
+  background-image: url("assets/img/QR\ \(1\).png");
+  margin-top: 50px;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 350px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+
+.livetext{
+  margin-top: 50px;
+}
+.livecontainer h1{
+  font-family: 'Righteous', sans-serif;
+  color: rgba(255,255,255,0.98);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.livecontainer p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button-wrapper{
+  margin-top: 18px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all .3s ease;
+  
+}
+
+.outline:hover{
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s ease;  
+}
+
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255,255,255,0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease; 
+}
+
+.fill:hover{
+  transform: scale(1.125);  
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;    
+}
+
+.liveheading h2{
+  margin-top: 150px;
+  text-align: center;
+  text-decoration: wavy;
+  font-size: 50px;
+  font-weight: 550;
+  font-style:inherit;
+  font-display:initial;
+  color: #fff;
+}
+
+@media (max-width:1200px) {
+  .livecontainer{
+    width: 330px;
+    height: 800px;
+    margin-left: -1px;
+    margin-left: 10px;
+  }
+  
+  .banner-image {
+    width: 300px;
+    height: 400px;
+    margin-left: -25px;
+  }
+  
+.mtclogo{
+    margin-left: 10px;
+}
+
+
+
+}
+
+
+
+#login-show-popup{
+    margin-left: -1250px;
+    margin-top: 500px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: aqua;
+    border: 2px solid aqua;
+    background-color: rgb(68, 145, 145);
+    border-radius: 10px;
+    outline: none;
+    transition: 300ms;
+}
+/* Change login button color on hover mode or focus, and make it bigger a little bit */
+#login-show-popup:hover,#login-show-popup:focus{
+    color: rgb(47, 239, 239);
+    border: 2px solid rgb(205, 205, 205);
+    background-color: rgb(91, 128, 128);
+    transform: scale(1.05)
+}
+#login-show-popup:active{
+    transform: scale(1,1)
+}
+
+/* Container contain popup form and login button */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+    margin-left: 10px;
+    /*Make it in center*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlayer{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    transition: opacity 500ms ease-in;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+}
+/* popup form style */
+#pop-up_form {
+    background-color: rgb(24, 7, 77);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-left: -1225px;
+    margin-top: 300px;
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 300ms ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+/* the X button in top right corner*/
+#close{
+    background:transparent;
+    font-size: 30px;
+    outline:none;
+    border: none;
+    padding: 3px 6px;
+    color: rgb(255, 57, 57);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+label{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: aqua;
+}
+
+input:not([type="submit"]){
+    font-size: 18px;
+    width: 100%;
+    margin: 8px 0;
+    height: 50px;
+    border: 2px solid rgb(37, 102, 215);
+    padding: 0 10px;
+    border-radius: 10px;
+    outline: none;
+    transition: transform 300ms ease-in-out;
+}
+input[type="submit"]{
+    width: 100%;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    background-color: aqua;
+    border: 2px solid rgb(37, 102, 215);
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 300ms ease-in-out;
+    outline: none;
+}
+input:hover,input:focus{
+   transform: scale(1.06);
+}
+input[type="submit"]:active{
+    transform: scale(1,1);
+}
+
+
+</style>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <div class="mtclogo">
+        <a href="#hero" class="scrollto">
+          <img src="assets/img/logo_dark.png" alt="" title=""/>
+        </a>
+      </div>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#services">Sponsors</a></li>
+          <li><a class="nav-link scrollto" href="Team.html">Team</a></li>
+          <li><a class="nav-link scrollto active" href="Team.html">Certificates</a></li>
+          <li><a class="nav-link scrollto" href="photo.html">Gallery</a>
+          </li>
+          <!--<li><a class="nav-link scrollto" href="Schedule.html">Events</a></li>-->
+          <li>
+            <a class="nav-link scrollto" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+      <!-- <button class="sweet-alert-test buy-tickets">Register</button> -->
+      <button class="sweet-alert-test buy-tickets">
+        <a  href="registration-drive.html">Register</a>
+      </button>
+      <!-- <a href="https://forms.gle/5GGc9YbWCowd6aQZ7" target="_blank">  <button class="buy-tickets"> Register </button></a> -->
+    </div>
+  </header>
+
+
+  <div class="liveheading">
+        <h2>Get Your Certificate</h2>
+
+      </div>
+    </div>
+  </div>
+          
+  <style>
+    
+  </style>
+
+  
+          <div class="livecontainer">
+            <div class="wrapper">
+  
+              <center>
+              <div class="banner-image"> </div>
+            </center>
+  
+            <div class="livetext">
+               <h1> Cognition 2.0</h1>
+          
+             </div>
+             </div>
+         </div>
+       
+         
+         <div id="overlayer"></div>
+         <div class="container">
+             <div id="pop-up_form">
+                 <button id="close">&times;</button>
+                 <form id="myForm">
+                     <div class="inpt-filed">
+                         <label for="username">Email - Id</label>
+                         <input type="text" placeholder="Enter Email id" id="uname" required>
+                     </div>
+                    <div class="inpt-filed">
+                         <label for="password">Phone Number</label>
+                         <input type="phone number" placeholder="Enter phone number" id="pass" required>
+                     </div> 
+                     <div class="inpt-filed">
+                         <input type="submit" value="Login" id="login" />
+                     </div>
+                 </form>
+             </div>
+             <button id="login-show-popup">Get Certificate</button>
+         </div>
+
+
+
+         <script>
+
+
+// Get main login button in page
+const showPopUpForm = document.getElementById('login-show-popup')
+//Get pop up form
+const poUp_form = document.getElementById('pop-up_form')
+//Get close button in pop-up form in top right corner
+const closeBtn = document.getElementById('close')
+
+
+//Get overlay
+const overlayer = document.getElementById('overlayer')
+
+//get input fields //username and password
+
+
+
+//main login button on click =>run open pop-up form function
+showPopUpForm.onclick = () => openPopUp()
+
+//close button on click =>run close pop-up form function
+closeBtn.onclick =() => closePopUp()
+
+//overlay button on click =>run close pop-up form function
+overlayer.onclick =() => closePopUp()
+
+//Open pop-up form function
+function openPopUp(){
+    //make overlay visible
+    overlayer.style.display = 'block'
+    //make pop-up transform scale style 1 | show it // default is 0 | hide it
+    poUp_form.style.transform = 'scale(1)';
+    //make overlay visible by adding 1 in opaciity
+    overlayer.style.opacity = '1'
+    //aflter show pop-up form => hide login button in page
+    showPopUpForm.hidden = true;
+}
+//Close pop-up form function
+function closePopUp(){
+    //set pop-up transform scale value 0 | thats mean the pop-up form will be hidden
+    poUp_form.style.transform = 'scale(0)';
+    //also hide overlay by set opacity value 0 | we hide it but it still on the page, look at the next line ..
+    overlayer.style.opacity = '0'
+    //now lets hide it from the page ..
+    overlayer.style.display = 'none'
+    //if user put any info in inputs and he clicked on close button, the info will be still in inputs fields.. to remove it we can set the its value to null or ''
+    // username.value = null
+    // password.value = null
+    //or , this way is batter
+    username.value = ''
+    password.value = ''
+    //the aftre closing te pop-up form show the main login button!
+    showPopUpForm.hidden = false;
+}
+
+
+
+  // List of registered email IDs
+  const registeredEmails = [
+    "user1@example.com",
+    "user2@example.com",
+    "vansh.102166@stu.upes.ac.in",
+    // Add more registered email IDs as needed
+  ];
+
+  // Function to handle form submission
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Get form values
+    const name = document.getElementById("uname").value;
+    const phone = document.getElementById("pass").value;
+  
+
+    // Check if the entered email is in the list of registered emails
+    if (registeredEmails.includes(name)) {
+      // Email is registered, proceed with form submission or other actions
+
+      // Example: You can log the values in the console
+      console.log("Name: ", name);
+      console.log("phone: ", phone);  
+      window.location.href = "certificategenrator.html";
+    
+
+      // Perform other actions (e.g., AJAX submission, etc.)
+      // ...
+    } else {
+      // Email is not registered, redirect the user to a different page
+      window.location.href = "https://www.example.com/not-registered.html";
+    }
+  }
+
+  // Add event listener to the form
+  const form = document.getElementById("myForm");
+  form.addEventListener("submit", handleSubmit);
+</script>
+
+
+         </script>

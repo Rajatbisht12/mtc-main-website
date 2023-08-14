@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> Microsoft Technical Community </title>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  
+  <!-- Favicons -->
+  <link href="assets/img/image1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent - v4.1.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .tab1{
+      margin-left: 130px;
+      margin-top: 50px;
+    }
+    body{
+      background-image: url("assets/img/aiml_bootcamp.png");
+    }
+    section{
+      background-image: url(/assets/img/aiml_bootcamp.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .section-header{
+        margin-left: 200px;
+    }
+    .tab{
+        margin-left: 600px;
+    }
+    .more b{
+        color: white;
+    }
+    button{
+        margin-left: 550px;
+    }
+    .btn{
+      background-color: #086EB5;
+      opacity: 0.8;
+      color: white;
+    }
+    .btn:hover{
+      background-color: grey;
+      color: black;
+      opacity: 0.7;
+    }
+    .row{
+      align-items: center;
+      justify-content: center;
+    }
+    h1{
+      margin-left: 280px;
+      font-size: 60px;
+    }
+    .lower{
+      margin-left: 220px;
+      font-size: 60px;
+    }
+    .section-header p{
+      font-size: 55px;
+      margin-left: 230px;
+      /* background-color: #086EB5; */
+      color: #5CE1E6;
+      width:fit-content;
+      /* opacity: 0.5; */
+      border-radius: 15px;
+    }
+
+    .dt-1{
+      list-style: none;
+      border: solid;
+      box-sizing: content;
+      padding: 27px;
+      width: fit-content;
+      /* background-color: #086EB5; */
+      opacity: 0.7;
+      font-size: larger;
+    }
+    .dt-2{
+      list-style: none;
+      border: solid;
+      box-sizing: content;
+      padding: 40px 27px;
+      width: fit-content;
+      /* background-color: #086EB5; */
+      opacity: 0.7;
+      font-size: larger;
+    }
+    .dt-3{
+      list-style: none;
+      border: solid;
+      box-sizing: content;
+      padding: 14px 27px;
+      width: fit-content;
+      /* background-color: #086EB5; */
+      opacity: 0.7;
+      font-size: larger;
+    }
+    .root{
+      display: flex;
+    }
+    .desc {
+      list-style: none;
+      border: solid;
+      box-sizing: content;
+      margin-left: -35px;
+      padding: 0px 93px;
+      width: fit-content;
+      /* background-color: #086EB5; */
+      opacity: 0.7;
+      font-size: 18px;
+      text-align: justify;
+    }
+    .upper-btn {
+      margin-top: 15px;
+      font-size: 36px;
+      margin-left: -175px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+    .section-header{
+        margin-left: 10px;
+    }
+    .tab1{
+        font-size:large;
+        font-family: fantasy;
+        margin-left: 10px;
+    }
+    .tab{
+        font-size: large;
+        font-family: fantasy;
+        margin-left: 172px;
+    }
+    button{
+            margin-left:40px;
+        }
+    .section-header{
+        text-size-adjust: 10px;
+    }
+    /* #demo {
+    text-align: center;
+    font-size: 200px;
+    margin-top: 0px;
+    } */
+    .section-header p{
+      font-size: 25px;
+      
+      margin-left: 60px;
+      /* background-color: #086EB5; */
+      color: #5CE1E6;
+      width:fit-content;
+      opacity: 0.5;
+      border-radius: 15px;
+    }
+    h1{
+      margin-left: 15px;
+      font-size: 40px;
+    }
+    .lower{
+      
+      margin-left: 15px;
+      font-size: 40px;
+    }
+    .desc{
+      width: 193px;
+    height: 84px;
+     /* align-items: flex-start; */
+    text-align: justify;
+    font-size: 13px;
+    /* justify-content: flex-start; */
+    display: grid;
+    padding: initial;
+    }
+    .upper-btn{
+      margin-left:40px;
+    }
+    .dt-1{
+    list-style: none;
+    border: solid;
+    box-sizing: content;
+    padding: 27px;
+    width: fit-content;
+    /* background-color: #086EB5; */
+    opacity: 0.7;
+    font-size: larger;
+    }
+    .dt-2{
+      list-style: none;
+    border: solid;
+    box-sizing: content;
+    padding: 27px;
+    width: fit-content;
+    /* background-color: #086EB5; */
+    opacity: 0.7;
+    font-size: larger;
+    }
+    .dt-3{
+      list-style: none;
+    border: solid;
+    box-sizing: content;
+    padding: 27px;
+    width: fit-content;
+    /* background-color: #086EB5; */
+    opacity: 0.7;
+    font-size: larger;
+    }
+    }
+  </style>
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html #hero" class="scrollto"><img src="assets/img/logo_dark.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html #hero">Home</a></li>
+      <li><a class="nav-link scrollto" href="index.html #services">Sponsors</a></li>
+          <li><a class="nav-link scrollto" href="Team.html">Team</a></li>
+          <li><a class="nav-link scrollto" href="Gallery.html">Gallery</a></li>
+          <!-- <li><a class="nav-link scrollto" href="Schedule.html">Events</a></li> -->
+        <li><a class="nav-link scrollto" href="Contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <!-- <button class="sweet-alert-test buy-tickets"> Register </button> -->
+	  <a href="https://forms.gle/mTLUUFzLGtUoDYz46" target="_blank">  <button class="buy-tickets"> Register </button></a>
+
+    </div>
+  </header>
+  </header><!-- End Header -->
+
+  <main id="main" class="main-page">
+
+    <!-- ======= Speaker Details Sectionn ======= -->
+    <section id="speakers-details">
+      <div class="container">
+        <div class="section-header">
+          <h1><b>Techfuse 1.0  </b></h1>
+          <h1 class="lower"><b>AIML Bootcamp</b></h1>
+          <h3 class="tab1">"AI is one of the most important things humanity is working <br> on. It is more profound than, I dunno, electricity or fire.”</h3>
+          <h3 class="tab">- Sundar Pichai</h3>
+          <p id="demo" class="demo1"></p>
+          <div class="upper-btn">
+         <!--   <form action="https://forms.gle/mTLUUFzLGtUoDYz46"> -->
+            <a href="problems.html"><button class="btn">Problem Statement's</button></a>
+            </form>
+          </div>
+          <script>
+            var countDownDate = new Date("Apr 17, 2023 15:00:00").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();
+              var distance = countDownDate - now;
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+        </div>
+
+        <div class="row">
+          <!-- <div class="col-md-6">
+            <img src="assets/img/aiml_techfuse(1)_poster.png" alt="Speaker 1"  class="img-fluid" id="Jp" >
+          </div> -->
+
+          <div class="col-md-6">
+            <div class="details">
+              <!--<h2>Brenden Legros</h2>-->
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+			  <br>
+              <p></p>
+
+              <h4><b>Greetings, Tech Enthusiasts :</b></h4>
+              <h5>If you're a first-year student and unsure about which specialization to choose, don't worry! The <b>Microsoft Technical Community (MTC)</b> is organizing a series of workshops called <b>TechFuse 1.0</b>, which will provide you with a comprehensive understanding of various specializations like <b>AI/ML, CCVT, and CSF</b> . The first workshop, which focused on <b>Cloud Computing</b>, was presented by <b>Mr. Sanidhya Soni</b> and was a great success. The second workshop was about <b>Cyber security</b> and was conducted by <b>Mr. Akshit Sharma</b>, a Final year B. Tech student who specialized in CSF and was previously the head of <b>PR</b>.
+                
+                Now Microsoft Technical Community is conducting an <b>AI Bootcamp</b>, and attendees will have the chance to learn from an <b>AI/Ml</b> expert with significant knowledge in the field. The speaker <b>Mr. Aditya Kumar</b> is the <b>officiating President</b> of the Microsoft Technical Community and is currently a 3rd year B. Tech Computer Science student at UPES Dehradun.
+                
+                Don't miss the chance to acknowledge yourself about the world of <b>AI/ML</b> and dive into its depths. It will be a <b>three day event</b> that will be held <b>offline</b>.</h5>
+
+                <div class="root">
+                  <div class="dates">
+                    <ul>
+                      <li class="dt-1"><b>17th</b></li>
+                      <li class="dt-2"><b>18th</b></li>
+                      <li class="dt-3"><b>19th</b></li>
+                    </ul>
+                  </div>
+                  <div class="events-details">
+                    <ul>
+                      <li class="desc">The first day will comprise knowledge about the concepts of python used in machine learning</li>
+                      <li class="desc">The second day will be focused more on knowledge about the concepts of python used in machine learning.</li>
+                      <li class="desc">The third day will be a little different with a competition.</li>
+                    </ul>
+                  </div>
+                 
+                </div>
+
+                <h4 class="more"><b>Further Details :</b></h4>
+                <h5><b>Date :</b>&emsp;17th,18th,19th April 2023</h5>
+                <h5><b>Time :</b>&emsp; 3 to 5 p.m.</h5>
+                <h5><b>Venue :</b>&emsp; 11013</h5>
+                <h5>We hope you will take advantage of this opportunity to enhance your <b>AI/ML knowledge</b> and <b>skills</b>. Thank you again for your interest, and we look forward to seeing you at the <b>Bootcamp</b>.</h5>
+                <h4><b>For more information, kindly contact:</b></h4>
+                <h5><b>Siddhant:</b> 7906921781<br>
+                    <b>Vibhor:</b> 6284152883</h5>
+            </div>
+          </div>
+         <!-- <form action="https://forms.gle/mTLUUFzLGtUoDYz46">
+                <button class="btn">Register Now!</button> -->
+           </form>
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-info">
+          <img src="assets/img/logo_dark.png" alt="TheEvenet">
+          <p style="font-size: 18px;font-weight:bold;"> Technology is making people's lives easier.
+            <br>We, here at MTC are, constantly
+            Innovating, Inventing and Improvising.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html #hero">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html #about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Contact.html">Contact</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Team.html">Team</a></li>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+	<div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+          UPES Bidholi, <br>
+            Dehradun 248007 <br>
+            Uttarakhand <br>
+            <strong>Phone:</strong> +91-99108 10462<br />
+            <strong>Email:</strong> upesmtc@gmail.com <br />
+          </p>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/upesmtc/?epa=SEARCH_BOX" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/upesmtc/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/upesmtc/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <b>  COPYRIGHT © MICROSOFT TECHNICAL COMMUNITY. ALL RIGHTS RESERVED</b>
+      </div>
+      <!-- <div class="credits">
+
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div> -->
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- <script>
+      document.querySelector('.sweet-alert-test').addEventListener('click', success);
+      function success() {
+            swal("Registrations Closed", "Stay tuned for further updates on Instagram: @upesmtc and Linkedin: upesmtc", "error");
+    /*swal();*/
+      }
+  </script> -->
+
+
+
+</body>
+
+</html>
