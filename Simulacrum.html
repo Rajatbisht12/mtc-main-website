@@ -62,9 +62,78 @@
 
     </div>
   </header>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main id="main" class="main-page">
+
+    <style>
+      .count-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-heading{
+  padding-top: 50px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.timer {
+  margin-top: 0 !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.timer span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+
+  .count-container{
+    margin-top: 150px !important;
+  }
+  
+  .ctimer{
+    padding-left: 0 !important;
+  }
+  .timer {
+    margin-top: 100px;
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  .timer span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+    </style>
+    <div class="count-container">
+      <h1 class="count-heading">Event Begins In</h1>
+      <div id="countdown">
+        <ul class="ctimer">
+          <li class="timer"><span id="days"></span>days</li>
+          <li class="timer"><span id="hours"></span>Hours</li>
+          <li class="timer"><span id="minutes"></span>Minutes</li>
+          <li class="timer"><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- ======= Speaker Details Sectionn ======= -->
     <section id="speakers-details">
@@ -73,48 +142,106 @@
           <h2>SIMULACRUM</h2>
         </div>
 
-        <div class="row">
-          <div class="col-md-6">
-            <img src="assets/img/gallery/mtc simmi.png" alt="Speaker 1" class="img-fluid" id="Cp">
+        <style>
+          .eventDetails{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+          }
+
+          .imageHolder{
+            border: 5px solid #2BAE66;
+          }
+
+          .imageHolder img{
+
+            width: 500px;
+          }
+
+          .eventContent p{
+            text-align: justify;
+            color: white;
+          }
+
+          @media screen and (max-width: 768px) {
+  
+  
+  .eventDetails {
+    flex-direction: column;
+  }
+  
+  .imageHolder img{
+    width: 300px;
+  }
+  .eventContent p{
+    padding: 10px;
+          }
+}
+
+
+        </style>
+
+        <div class="eventDetails">
+          <div class="imageHolder">
+            <img src="/assets/img/gallery/mtc simmi.png" alt="">
           </div>
 
-          <div class="col-md-6">
-            <div class="details">
-              <!--<h2>Brenden Legros</h2>-->
-              <!--<div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>-->
-			  <br>
-            <p>In a dazzling display of creativity and camaraderie, the Microsoft Technical Community orchestrated the extraordinary SIMULACRUM event! It encompassed three domains of boundless learning and artistic expression. 
+          <div class="eventContent">
+            <p>
+              In a dazzling display of creativity and camaraderie, the Microsoft Technical Community orchestrated the extraordinary SIMULACRUM event! It encompassed three domains of boundless learning and artistic expression. 
 
-About the event:
-The first domain featured an engaging workshop on Photoshop, Premier Pro, and color theory. This virtual workshop took place from the 29th to the 31st of October 2023, running from 7 to 9 pm each day. What's more, it was offered completely free of cost to all members, and a certificate of participation was provided to commemorate the event. This event, along with the photo gallery, was accessible to photography enthusiasts across India.
-</p>
+              About the event:
+              The first domain featured an engaging workshop on Photoshop, Premier Pro, and color theory. This virtual workshop took place from the 29th to the 31st of October 2023, running from               7 to 9 pm each day. What's more, it was offered completely free of cost to all members, and a certificate of participation was provided to commemorate the event. This event, along              with the photo gallery, was accessible to photography enthusiasts across India.
 
-              <p><strong><u>About the event : </u></strong></p>
+              On the 30th of October, the second domain led the participants on an enjoyable photo walk from 11 am to 12:30 pm and it, too, was provided at no charge.
 
-			  <ul>
-              <li><p>
-                On the 30th of October, the second domain led the participants on an enjoyable photo walk from 11 am to 12:30 pm and it, too, was provided at no charge.
-                
-                The culmination was the third domain - a captivating photo gallery showcasing various themes including portrait, landscape, wildlife, monochrome, still-life, and wisdom. This event was truly a testament to the creativity and skills of the participants.
-                
-                The event was a great success, and the positive response from our members has been truly heartening. We look forward to adding even more stars to our Microsoft Technical Community in the future. Thank you all for making this event such a memorable one! </p></li>
-              
+              The culmination was the third domain - a captivating photo gallery showcasing various themes including portrait, landscape, wildlife, monochrome, still-life, and wisdom. This event               was truly a testament to the creativity and skills of the participants.
 
-              <!-- <p> Knowledge has an incredible power of shaping our identities and our actions.
-It is the moment when we discover that we are not just one fixed personality, but a series of people who wake up according to the challenge we are facing. Therefore, keep on buckle down and attempt to take part in progressively such beneficial occasions to build up a new adventure.
-</p> -->
-            </div>
+              The event was a great success, and the positive response from our members has been truly heartening. We look forward to adding even more stars to our Microsoft Technical Community                in the future. Thank you all for making this event such a memorable one!
+            </p>
           </div>
-
         </div>
+
+        
+
       </div>
 
     </section>
+
+    <style>
+      .btn{
+        margin-bottom: 100px;
+        width: 100%;
+
+      }
+
+      .btn button{
+        width: 250px;
+        height: 70px;
+        border: 3px solid #2BAE66;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .btn button:hover{
+        cursor: pointer;
+        background-color: #2BAE66;
+        scale: 1.1;
+      }
+
+
+    </style>
+
+    <div class="btn">
+      <a href="https://forms.gle/oP49ySShnztMqiYg7" target="_blank">
+
+        <button href="https://forms.gle/oP49ySShnztMqiYg7" >Register now</button>
+      </a>
+    </div>
 
   </main><!-- End #main -->
 
@@ -182,6 +309,7 @@ It is the moment when we discover that we are not just one fixed personality, bu
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -191,6 +319,7 @@ It is the moment when we discover that we are not just one fixed personality, bu
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="./countdown.js"></script>
   <script>
       document.querySelector('.sweet-alert-test').addEventListener('click', success);
       function success() {
