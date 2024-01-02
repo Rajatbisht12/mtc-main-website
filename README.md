@@ -1,2 +1,2 @@
 #Mtc-Website
-The Website is Live at https://vanshchauhan1310.github.io/mtc-main-website/)https://vanshchauhan1310.github.io/mtc-main-website/
+The Website is Live at https://vanshchauhan1310.github.io/mtc-main-website/
